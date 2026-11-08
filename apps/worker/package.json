@@ -1,0 +1,23 @@
+{
+  "name": "@urbanpulse/worker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "bullmq": "^5.41.9",
+    "ioredis": "^5.4.2",
+    "pg": "^8.23.1",
+    "socket.io-client": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

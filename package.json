@@ -1,0 +1,23 @@
+{
+  "name": "urbanpulse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/api",
+    "apps/web",
+    "apps/worker"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspace @urbanpulse/api",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "eslint": "^9.22.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0"
+  }
+}
